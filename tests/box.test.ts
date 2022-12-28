@@ -14,7 +14,7 @@ describe("box", () => {
     expect(items).toEqual([
       {
         id: 2,
-        upc: 2,
+        upc: "2",
         description: "pepsi",
         price: 2.4,
         dept: 1,
@@ -23,7 +23,7 @@ describe("box", () => {
       },
       {
         id: 3,
-        upc: 3,
+        upc: "3",
         description: "Mt Dew",
         price: 2.65,
         dept: 1,

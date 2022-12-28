@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 1,
-    upc: 1,
+    upc: "1",
     description: "coke",
     price: 1.0,
     dept: 1,
@@ -10,7 +10,7 @@ export const data = [
   },
   {
     id: 2,
-    upc: 2,
+    upc: "2",
     description: "pepsi",
     price: 2.4,
     dept: 1,
@@ -19,7 +19,7 @@ export const data = [
   },
   {
     id: 3,
-    upc: 3,
+    upc: "3",
     description: "Mt Dew",
     price: 2.65,
     dept: 1,
@@ -28,7 +28,7 @@ export const data = [
   },
   {
     id: 4,
-    upc: 4,
+    upc: "4",
     description: "Dr Pepper",
     price: 3.65,
     dept: 1,
