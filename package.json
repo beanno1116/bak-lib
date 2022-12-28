@@ -20,7 +20,7 @@
     "view:coverage": "start coverage/lcov-report/index.html",
     "test:watch": "jest --watch"
   },
-  "keywords": [],
+  "keywords": ["typescript","library","fp"],
   "author": "Ben",
   "license": "MIT",
   "devDependencies": {

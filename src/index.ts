@@ -8,6 +8,7 @@ import { Maybe } from "./maybe";
 import { Queue } from "./queue";
 import { Stack } from "./stack";
 import { IStack, IQueue } from "./types";
+import { trace } from "./Utils";
 
 console.log("ready to code");
 const unused = 1;
@@ -23,4 +24,5 @@ export {
   prop,
   Queue,
   Stack,
+  trace,
 };
