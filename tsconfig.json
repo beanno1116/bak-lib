@@ -16,7 +16,7 @@
   },
   "exclude": [
     "dist",
-    "not_modules",
+    "node_modules",
     "tests",
     "example"
   ]
