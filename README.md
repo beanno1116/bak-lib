@@ -4,14 +4,14 @@ This is a small utility package to test npm
 
 These are the current functions in the library
 
-- Append
-- Box
-- Compose
-- Curry
-- Maybe
-- prop
-- Queue
-- Stack
+- [Append](#append)
+- [Box](#box)
+- [Compose](#compose)
+- [Curry](#curry)
+- [Maybe](#maybe)
+- [prop](#prop)
+- [Queue](#queue)
+- [Stack](#stack)
 
 ## Append ##
 
@@ -80,7 +80,8 @@ This modan can be used when a null value could be expexted from data recieved fr
     expect(maybeNumberOne.isNothing()).toBeFalsy();
     expect(maybeNumberTwo.isNothing()).toBeTruthy();
 ```
-## Queue ## 
+
+## Queue ##
 
 This is a first in first out data structure
 
