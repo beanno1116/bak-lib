@@ -4,11 +4,20 @@ This is a small utility package to test npm
 
 These are the current functions in the library
 
+- Append
 - Box
 - Compose
 - Curry
+- Maybe
+- prop
 - Queue
 - Stack
+
+## Append ##
+
+```js
+  expect(append("thing")("some")).toEqual("something");
+```
 
 ## Box ##
 
@@ -50,6 +59,27 @@ This function can be used like Partial Applicatoin. You can lazily load argument
     expect(result).toEqual(9);
 ```
 
+## Prop ##
+
+This function get a property from an object
+
+```js
+    const obj = { id: 1, name: "ben" };
+    expect(prop("name")(obj)).toEqual("ben");
+
+```
+
+## Maybe ##
+
+This modan can be used when a null value could be expexted from data recieved from server
+
+```js
+    const maybeNumberOne = Maybe.just(5);
+    const maybeNumberTwo = Maybe.nothing();
+
+    expect(maybeNumberOne.isNothing()).toBeFalsy();
+    expect(maybeNumberTwo.isNothing()).toBeTruthy();
+```
 ## Queue ## 
 
 This is a first in first out data structure
