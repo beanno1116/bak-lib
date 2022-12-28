@@ -1,5 +1,6 @@
 import { data } from "../tests/data";
 import { box } from "../src/box";
+import { Maybe, prop, append } from "../src";
 
 const items = box(data)
   .map((x) => x.filter((i) => i.dept === 1))
@@ -10,3 +11,18 @@ const items = box(data)
   .fold((x) => x);
 
 console.log(items);
+
+const badInput = Maybe.just({});
+console.log(badInput.extract());
+
+const appendC = Maybe.chain(prop("b"), prop("c"), append(" is great"));
+const goodInput = Maybe.just({
+  b: {
+    c: "fp",
+  },
+});
+
+const result = appendC(badInput);
+console.log(appendC(goodInput).extract());
+
+console.log(result.extract);
